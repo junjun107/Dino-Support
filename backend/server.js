@@ -40,6 +40,7 @@ app.use(errorHandler);
 //Connect To Database
 connectDB().then(() => {
   //Server Running
+  console.log("I am here!!!!!");
   app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}, you better catch it!`);
   });
