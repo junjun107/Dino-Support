@@ -7,7 +7,7 @@ const connectDB = require("./config/db");
 const PORT = process.env.PORT || 5000;
 
 // Connect to database
-connectDB();
+// connectDB();
 
 const app = express();
 
@@ -36,3 +36,13 @@ if (process.env.NODE_ENV === "production") {
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
+//Connect To Database
+connectDB().then(() => {
+  //Server Running
+  app.listen(process.env.PORT, () => {
+    console.log(
+      `Server is running on ${process.env.PORT}, you better catch it!`
+    );
+  });
+});
