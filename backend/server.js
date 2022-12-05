@@ -19,7 +19,7 @@ app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/tickets", require("./routes/ticketRoutes"));
 
 // Serve Frontend
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "production") {
   // Set build folder as static
   app.use(express.static(path.join(__dirname, "../frontend/build")));
 
@@ -40,9 +40,7 @@ app.use(errorHandler);
 //Connect To Database
 connectDB().then(() => {
   //Server Running
-  app.listen(process.env.PORT, () => {
-    console.log(
-      `Server is running on ${process.env.PORT}, you better catch it!`
-    );
+  app.listen(PORT, () => {
+    console.log(`Server is running on ${PORT}, you better catch it!`);
   });
 });
