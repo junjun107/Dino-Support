@@ -3,7 +3,7 @@ This is a Full stack App where users can create, update, delete a ticket.
 
 **Link to project:** https://drab-pear-moth-wrap.cyclic.app/
 
-![alt tag](https://res.cloudinary.com/dhhiphscp/image/upload/v1670285705/dino-landing_bsfvps.png)
+![alt tag](https://res.cloudinary.com/dhhiphscp/image/upload/v1670283022/portfolio/dino_support_tggjir.png)
 
 ## How It's Made:
 
